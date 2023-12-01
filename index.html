@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body{
+        all: unset;
+        display: block;
+        height: 100vh;
+      }
+       .section {
+  display: grid;
+   justify-content: center;
+  align-content: center;
+    height: 100%;     
+}
+      canvas {
+        outline: 1px solid #C2C2C2;
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+    </style>
+    <script type="module" crossorigin src="src/webGPU.js"></script>
+    <link rel="modulepreload" crossorigin href="src/polyfill.js">
+
+  </head>
+  <body>
+    <section class="section">
+    <canvas width="500" height="500"></canvas>
+    </section>  
+  </body>
+</html>
